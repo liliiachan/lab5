@@ -4,16 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="index.js"></script>
-    <title>lab5</title>
+    <script src="index.html"></script>
+    <title>Формы</title>
+    <style>
+      div {
+        margin: 20px;
+      }
+    </style>
   </head>
+
   <body>
-    <h1 align="center">Лабораторна робота № 5</h1>
-    <br />
-    <h2 align="center">Налаштування робочого довкілля Node.js</h2>
-    <br /><br />
-    <center>
-      <input type="button" value="Start script" onclick="test_script()" />
-    </center>
+    <div>
+      <h2>Контроль корректности имени пользователя</h2>
+      <span> Введите имя:</span>
+      <input type="text" id="name" size="16" />
+      <br />
+      <br />
+      <span
+        >(Имя должно начинатся с заглавной буквы, остальные символы нижнего
+        регистра;</span
+      >
+      <br />
+      <span>имя не должно превышать 16 символов)</span>
+      <br />
+      <br />
+      <input type="button" value="Проверить" onclick="name_validation()" />
+    </div>
+    <div>
+      <h2>Контроль корректности адреса электронной почты</h2>
+      <span>Введите адрес эл. почты:</span>
+      <input type="text" id="email" size="10" />
+      <br />
+      <br />
+      <span
+        >(@ должен быть не первым символом; должна присутствовать минимум 1
+        точка;</span
+      >
+      <br />
+      <span
+        >точка должна стоять после @ и должен быть минимум 1 символ между
+        ними;</span
+      >
+      <br />
+      <span>после точки должны присутствовать минимум 2 символа)</span>
+      <br />
+      <br />
+      <input type="button" value="Проверить" onclick="email_validate()" />
+    </div>
+    <div>
+      <h2>Контроль корректности номера телефона</h2>
+      <span>Введите номер телефона:</span>
+      <input type="text" id="mob_num" size="10" />
+      <br />
+      <br />
+      <span
+        >(Номер должен содержать не более 12 цифр; номер должен начинаться с
+        38;</span
+      >
+      <br />
+      <span>номер не должен состоять только из цифр)</span>
+      <br />
+      <span> Пример корректного номера: 380123456789</span>
+      <br />
+      <br />
+      <input type="button" value="Проверить" onclick="number_validate()" />
+    </div>
   </body>
 </html>
