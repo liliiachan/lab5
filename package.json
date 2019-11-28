@@ -1,0 +1,23 @@
+{
+  "name": "lab5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx eslint --fix ."
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "firebase": "^7.5.0",
+    "husky": "^3.1.0"
+  }
+}
